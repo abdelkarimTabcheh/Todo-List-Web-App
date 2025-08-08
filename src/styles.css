@@ -317,3 +317,12 @@ button {
     font-size: 0.9rem;
   }
 }
+
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+body.dark button {
+  background: #333;
+  color: white;
+}

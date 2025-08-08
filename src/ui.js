@@ -12,6 +12,21 @@ export function renderProjects(projects, activeProjectId) {
     .join('');
 }
 
+export function setupDarkMode() {
+  const toggle = document.createElement('button');
+  toggle.textContent = '🌙 Dark Mode';
+  toggle.id = 'dark-mode-toggle';
+  document.body.prepend(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark'));
+  });
+
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark');
+  }
+}
 
 export function renderTodos(project) {
   const title = document.getElementById('current-project-title');
