@@ -1,6 +1,8 @@
 # Todo App
 
-A clean, responsive, and user-friendly Todo List web application that supports multiple projects, task management with priorities, due dates, and task descriptions. Built with modern JavaScript modules and minimal dependencies, this app persists data using `localStorage` and offers an intuitive interface on both desktop and mobile devices.
+A clean, responsive, and user-friendly Todo List web application that supports multiple projects, task management with priorities, due dates, and task descriptions.
+
+Built with modern **JavaScript ES6 Modules**, styled with **CSS3**, and bundled using **Webpack**, this app stores your data in the browser using `localStorage` for a seamless experience across sessions.
 
 ---
 
@@ -19,7 +21,7 @@ A clean, responsive, and user-friendly Todo List web application that supports m
 
 ## Demo
 
-*(Optional: add a live demo link here)*
+[View the Todo App on GitHub Pages](https://abdelkarimTabcheh.github.io/Todo-List-Web-App)
 
 ---
 
@@ -27,31 +29,43 @@ A clean, responsive, and user-friendly Todo List web application that supports m
 
 - **HTML5 & CSS3:** Semantic markup and responsive styling with CSS variables.
 - **JavaScript (ES6 Modules):** Modular architecture with separation of concerns.
+- **Webpack:** Asset bundling, dev server, and production builds.
+- **Babel:** Transpiling modern JS for compatibility.
 - **LocalStorage API:** For client-side persistent data storage.
 
 ---
 
 ## Getting Started
 
-### Prerequisites
+### 🛠️ Prerequisites
 
-- A modern web browser (Chrome, Firefox, Edge, Safari).
-- *(Optional)* A local HTTP server to serve the files (recommended for module imports).
+- A modern browser (Chrome, Firefox, Edge, Safari).
+- Node.js (for local development with Webpack).
 
-### Installation
+### 📦 Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
-   cd todo-app
+   git clone https://github.com/abdelkarimTabcheh/Todo-List-Web-App.git
+   cd Todo-List-Web-App
 
-2. Serve the project folder using a local server (for example, using VS Code Live Server or http-server npm package):
+2. Install dependencies:
 
    ```bash
-    npx http-server
+    npm install
 
-3. Open your browser and navigate to http://localhost:8080 (or the port your server uses).
+
+3. Start the development server:
+
+   ```bash
+   npm start
+Then open your browser at: http://localhost:8080
+   
+4. To build for production:
+
+   ```bash
+   npm run build
 
 
 ### Usage
